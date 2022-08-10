@@ -1,0 +1,78 @@
+body .header{
+    width: calc(100% - 460px);
+    left: calc(50% - 460px);
+}
+
+.hero{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 50vh;
+    &__knowledge{
+        justify-self: end;
+        h2{
+            font-size: 3rem;
+            line-height: 48px;
+        }
+    }
+}
+
+.down-arrow{
+    display: none;
+}
+
+.about-me{
+    display: grid;
+    padding-top: 120px;
+    &__welcome{
+        &__k-word{
+            // grid-area: 1/1/3/4;
+            width: 300px;
+        }
+        h3{
+            font-size: 2.4rem;
+        }
+    }
+    // &__description{
+    //     grid-area: 1/2;
+    // }
+
+}
+@media (min-width:920px) {
+    .about-me{
+        &__description{
+            grid-area: 1/2;
+        }
+        &__download-cv{
+            justify-self: center;
+            grid-area: 3/1/3/4;
+            margin-top: 42px;
+            width: 400px;
+        }
+    }
+}
+
+.knowledge{
+    .education{
+        &__courses{
+            display: grid;
+            gap: 24px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__course{
+            min-width: 200px
+        }
+    }
+}
+
+.menu{
+    width: 40%;
+}
+
+.container{
+    max-width: 920px;
+    width: calc(100% - 76px);
+}
+.sub-container{
+    width: calc(100% - 300px);
+}
