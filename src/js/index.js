@@ -1,3 +1,4 @@
+import {cambiarHorario} from './horarios.js'
 const $burguerMenu = document.querySelector('.header__nav__burger-menu');
 const $nav = document.querySelector('.menu');
 
@@ -24,3 +25,5 @@ $nav.querySelectorAll('.menu__links__item a').forEach(item =>{
         })
     } )
 })
+
+cambiarHorario()

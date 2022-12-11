@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://www.alexisklisch.com" />
     <meta property="og:description" content="Aumentá tus ventas 📈 con las mejores soluciones en Tecnología para el 🏡 Real Estate.">
     <meta property="og:image" content="https://www.alexisklisch.com/media/graphs/miniatura.png">
+    <link rel="canonical" href="https://alexisklisch.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
@@ -30,7 +31,7 @@
     </script>
 </head>
 <body>
-    <header class="header sub-container">
+    <header class="header">
         <picture class="header__logo">
             <img src="./media/graphs/logo-alexis-klisch.svg" alt="Logo of Alexis Klisch, Frontend Developer">
             <h1>Alexis Klisch</h1>
@@ -160,50 +161,24 @@
         </section>
         <section class="portfolio container" id="portfolio">
             <h3 class="portfolio__title">Portfolio</h3>
-            <article class="portfolio__project precier">
-                <picture class="portfolio__project__logo" title="Logo de Precier">
-                    <img src="./media/graphs/logo-precier.svg">
-                </picture>
-                <h5 class="portfolio__project__subtitle">Precios de cierre para todo el rubro inmobiliario</h5>
-                <div class="portfolio__project__carrousel">
-                    <img src="./media/img/precier-example.jpeg" alt="" loading="lazy">
-                    <img src="./media/img/precier-example.jpeg" alt="" loading="lazy">
-                    <img src="./media/img/precier-example.jpeg" alt="" loading="lazy">
-                    <img src="./media/img/precier-example.jpeg" alt="" loading="lazy">
-                    <img src="./media/img/precier-example.jpeg" alt="" loading="lazy">
-                    <img src="./media/img/precier-example.jpeg" alt="" loading="lazy">
-                </div>
-                <div class="education__course__description">
-                    <p>Since 2019 I have dedicated my time to studying Web Development (and other knowledge) on the Platzi platform.<br></p>
-                    <p>Although I already had knowledge of HTML, CSS and JS, at Platzi I was able to consolidate and multiply my abilities as a developer.</p>
-                </div>
-                <div class="education__course__learned">
-                    <h6>Lessons Learned</h6>
-                    <ul>
-                        <li>
-                            <p>
-                                Creation of responsive websites.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Apps using JS on browser and server.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Database management.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Use of Linux for server management.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-    
-            </article>
+            <a href="https://mr-gif.vercel.app" target="_blank">
+                <article class="portfolio__project precier">
+                    <picture class="portfolio__project__logo" title="Logo de Precier">
+                        <img src="./media/graphs/logo-mr-gif.svg">
+                    </picture>
+                    <h5 class="portfolio__project__subtitle">Find your favourites GIF and share with your friends</h5>
+                    <div class="portfolio__project__carrousel">
+                        <img src="./media/img/mrgif-1.png" alt="Screenshot 1 of Mr. GIF app" loading="lazy">
+                        <img src="./media/img/mrgif-2.png" alt="Screenshot 2 of Mr. GIF app" loading="lazy">
+                    </div>
+                    <div class="education__course__description">
+                        <p>mr-gif is an app to search for all kinds of themes in gif format.</p>
+                        <p>Not only will you be able to search for whatever comes to mind, but you will also see global trends.</p>
+                        <p>All thanks to the GIPHY API and React.js</p>
+                    </div>
+        
+                </article>
+            </a>
         </section>
     </section>
     <footer class="footer">
@@ -273,6 +248,6 @@
         </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>

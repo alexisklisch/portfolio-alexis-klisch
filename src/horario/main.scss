@@ -1,0 +1,17 @@
+@use '../css/main.scss' as *;
+
+.horarios__title {
+  font-size: 2.4rem;
+  color: $green;
+  padding-top: 120px;
+}
+
+.horarios__time {
+  text-align: center;
+  font-size: 4.2rem;
+  color: $gold;
+}
+
+.horarios-container {
+  margin: 60px 0;
+}
